@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="textButtonNumber" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+    <style name="buttonNumber" parent="Widget.Material3.Button.TonalButton">
+        <item name="minWidth">32dp</item>
+        <item name="android:textAppearance">@style/textButtonNumber</item>
+    </style>
+<!--    <style name="buttonNumber" parent="">-->
+<!--        <item name="minWidth">32dp</item>-->
+<!--        <item name="android:textAppearance">@style/textButtonNumber</item>-->
+<!--    </style>-->
+</resources>

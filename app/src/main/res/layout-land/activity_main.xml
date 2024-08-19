@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginHorizontal="16dp"
+            android:clickable="false"
+            android:inputType="text"
+            android:text="0"
+            android:textAlignment="viewEnd"
+            android:textDirection="ltr"
+            app:layout_constraintBottom_toTopOf="@+id/btnPmt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/submit"
+            android:backgroundTint="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnFour"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnComma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value_comma"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSubmit"
+            app:layout_constraintEnd_toStartOf="@+id/btnZero"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSubmit" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnZero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value_00"
+            android:backgroundTint="@color/yellow"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSubmit"
+            app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnComma" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSubmit"
+            app:layout_constraintEnd_toStartOf="@+id/btnDivisor"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnZero" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnDivisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/divisor"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSubmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnDelete" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value_01"
+            app:layout_constraintBottom_toTopOf="@+id/btnComma"
+            app:layout_constraintEnd_toStartOf="@+id/btnTwo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSubmit" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value_02"
+            app:layout_constraintBottom_toTopOf="@+id/btnZero"
+            app:layout_constraintEnd_toStartOf="@+id/btnThree"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnOne" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value_03"
+            app:layout_constraintBottom_toTopOf="@+id/btnDelete"
+            app:layout_constraintEnd_toStartOf="@+id/btnPow"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnTwo" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnPow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pow"
+            app:layout_constraintBottom_toTopOf="@+id/btnDivisor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnThree" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value_04"
+            app:layout_constraintBottom_toTopOf="@+id/btnOne"
+            app:layout_constraintEnd_toStartOf="@+id/btnFive"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSubmit" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value_05"
+            app:layout_constraintBottom_toTopOf="@+id/btnTwo"
+            app:layout_constraintEnd_toStartOf="@+id/btnSix"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnFour" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value_06"
+            app:layout_constraintBottom_toTopOf="@+id/btnThree"
+            app:layout_constraintEnd_toStartOf="@+id/btnMinus"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnFive" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus"
+            app:layout_constraintBottom_toTopOf="@+id/btnPow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSix" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+            app:layout_constraintEnd_toStartOf="@+id/btnFour"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value_07"
+            app:layout_constraintBottom_toTopOf="@+id/btnFour"
+            app:layout_constraintEnd_toStartOf="@+id/btnEight"
+            app:layout_constraintStart_toEndOf="@+id/btnSubmit" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnEight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value_08"
+            app:layout_constraintBottom_toTopOf="@+id/btnFive"
+            app:layout_constraintEnd_toStartOf="@+id/btnNine"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSeven" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnNine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value_09"
+            app:layout_constraintBottom_toTopOf="@+id/btnSix"
+            app:layout_constraintEnd_toStartOf="@+id/btnPlus"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnEight" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus"
+            app:layout_constraintBottom_toTopOf="@+id/btnMinus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnNine" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number_of_payments"
+            app:layout_constraintBottom_toTopOf="@+id/btnClear"
+            app:layout_constraintEnd_toStartOf="@+id/btnSeven"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnPv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/present_value"
+            app:layout_constraintBottom_toTopOf="@+id/btnN"
+            app:layout_constraintEnd_toStartOf="@+id/btnFv"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@+id/btnN" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnFv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/future_value"
+            app:layout_constraintBottom_toTopOf="@+id/btnSeven"
+            app:layout_constraintEnd_toStartOf="@+id/btnPmt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@+id/btnPv" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnPmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment"
+            app:layout_constraintBottom_toTopOf="@+id/btnEight"
+            app:layout_constraintEnd_toStartOf="@+id/btnI"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@+id/btnFv" />
+
+        <com.example.calculadora.components.CustomButtonView
+            android:id="@+id/btnI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/juros"
+            app:layout_constraintBottom_toTopOf="@+id/btnPlus"
+            app:layout_constraintEnd_toEndOf="@+id/btnPlus"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@+id/btnPmt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

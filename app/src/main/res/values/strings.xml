@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">calculadora</string>
+    <string name="submit">E\nN\nT\nE\nR</string>
+    <string name="delete">dd</string>
+    <string name="clear">Clr</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="divisor">/</string>
+    <string name="pow">*</string>
+    <string name="present_value">PV</string>
+    <string name="future_value">FV</string>
+    <string name="payment">PMT</string>
+    <string name="juros">i</string>
+    <string name="number_of_payments">n</string>
+    <string name="value_00">0</string>
+    <string name="value_01">1</string>
+    <string name="value_02">2</string>
+    <string name="value_03">3</string>
+    <string name="value_04">4</string>
+    <string name="value_05">5</string>
+    <string name="value_06">6</string>
+    <string name="value_07">7</string>
+    <string name="value_08">8</string>
+    <string name="value_09">9</string>
+    <string name="value_comma">.</string>
+</resources>

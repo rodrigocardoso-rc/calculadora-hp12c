@@ -1,0 +1,6 @@
+<!-- res/values/attrs.xml -->
+<resources>
+    <declare-styleable name="CustomButtonView">
+        <attr name="android:text" format="string"/>
+    </declare-styleable>
+</resources>
